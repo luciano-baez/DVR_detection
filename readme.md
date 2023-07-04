@@ -13,14 +13,17 @@ To get faster results, I didn't train the neural network, but used an already-tr
 In this repo they are going to decorate different python codes that I will be doing to obtain the final result; that today I imagine as a RaspberryPi running an agent in python that triggers an alert that reaches my cell phone.
 
 ## Red Neuronal pre entrenada - Pretrained Neural Network
-Los 3 archivos necesarios se encuentran en este repositorio pero dejo el link de donde los obtuve.
+Aqui estan los links de los 3 archivos necesarios para poder hacer andar la red neuronal.
+Here are the links of the 3 files needed to make the neural network work.
 
-The 3 necessary files are in this repository but I leave the link from where I got them.
+[https://pjreddie.com/media/files/yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
+[https://github.com/pjreddie/darknet/blob/master/data/coco.names](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
+[https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
 
-https://pjreddie.com/darknet/yolo/
-https://github.com/pjreddie/darknet/blob/master/data/coco.names
-https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg
 
+Este es el enlace de YOLO: Detección de objetos en tiempo real
+This is the link of YOLO: Real-Time Object Detection
+[https://pjreddie.com/darknet/yolo/](https://pjreddie.com/darknet/yolo/)
 
 ## Código - Code
 -  rtsp_processing.py
@@ -38,4 +41,3 @@ https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg
     The rtsp_processing_parameterized.py file is code to detect whatever is set in the json files. The idea is that it can be used to identify different kinds of things in different specific areas of the video and it's all customizable.
     The code must be called by passing the general configuration file as the first parameter. Ex: **python rtsp_processing_parameterized.py rtsp_processing_garage.json**
     Within the main json configuration file, the names of the other specific json files (the dvr config and  the areas to be scanned) and the neural network configuration files are configured.
-    
