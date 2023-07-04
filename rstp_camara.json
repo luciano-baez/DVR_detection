@@ -1,0 +1,10 @@
+{ 
+    "id": "garage",
+    "name": "garage",
+	"user": "user",
+	"password": "pass",
+	"address": "ipaddress",
+	"port": "554",
+	"path": "/h264/ch3/sub/av_stream",
+	"description": "Camara de garage"	
+}

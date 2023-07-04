@@ -1,0 +1,7 @@
+{ 
+	"dnncfg_filename": "yolov3.cfg",
+	"dnnweights_filename": "yolov3.weights",
+    "dnnclasesnames_filename": "coco.names",
+    "camera_jsonfile":"rstp_camara.json",
+    "zones_jsonfile": "rstp_deteccion_zones_garage.json"
+}
