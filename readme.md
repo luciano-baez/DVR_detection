@@ -16,24 +16,24 @@ In this repo they are going to decorate different python codes that I will be do
 Aqui estan los links de los 3 archivos necesarios para poder hacer andar la red neuronal.
 Here are the links of the 3 files needed to make the neural network work.
 
-[https://pjreddie.com/media/files/yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
-[https://github.com/pjreddie/darknet/blob/master/data/coco.names](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
-[https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
+- [https://pjreddie.com/media/files/yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
+- [https://github.com/pjreddie/darknet/blob/master/data/coco.names](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
+- [https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
 
 
-Este es el enlace de YOLO: Detección de objetos en tiempo real
-This is the link of YOLO: Real-Time Object Detection
+Este es el enlace de YOLO: Detección de objetos en tiempo real.  
+This is the link of YOLO: Real-Time Object Detection.  
 [https://pjreddie.com/darknet/yolo/](https://pjreddie.com/darknet/yolo/)
 
 ## Código - Code
--  rtsp_processing.py
+-  rtsp_processing.py  
     El archivo rtsp_processing.py es el primer código que escribí, con la idea de poder integrar OpenCV y NumPy y cargar el modelo preentrenado para reconocer vehículos. Es decir una especie de test de viabilidad y tiene muchas cosas codificadas.
     En él tienen que asignar los valores de autenticación de la transmisión rtsp.
 
     The rtsp_processing.py file is the first code I wrote, with the idea of being able to integrate OpenCV and NumPy and load the pretrained model to recognize vehicles. That is to say, a kind of feasibility test and it has many things codified.
     In it they have to assign the authentication values of the rtsp stream.
 
-- rtsp_processing_parameterized.py
+- rtsp_processing_parameterized.py  
     El archivo rtsp_processing_parameterized.py es un código para detectar lo que esté configurado en los archivos json. La idea es que se pueda usar para identificar diferentes tipos de cosas en diferentes áreas específicas del video y todo es personalizable.
     El código debe llamarse pasando el archivo de configuración general como primer parámetro. Ej: **python rtsp_processing_parameterized.py rtsp_processing_garage.json**
     Dentro del archivo de configuración json principal se configuran los nombres de los demás archivos json específicos (del dvr y de las áreas a monitorear) y los archivos de configuración de la red neuronal.
